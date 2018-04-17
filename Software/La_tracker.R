@@ -25,7 +25,7 @@ APROACH
 #RESHAPING THE DATA
 
 # Read in the grid as a data frame
-hoursin_df <- as.data.frame(read.csv("./Data/Hoursin2.csv", header=TRUE))
+hoursin_df <- as.data.frame(read.csv("./Data/Hoursin.csv", header=TRUE))
 
 # Drop the first two columns (Year and PP)
 hoursin_df$Year <- NULL
