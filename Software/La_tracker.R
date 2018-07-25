@@ -26,21 +26,26 @@ APROACH
 
 # Read in the grid as a data frame
 hoursin_df <- as.data.frame(read.csv("./Data/Hoursin.csv", header=TRUE))
+head(hoursin_df)
+
 
 # Drop the first two columns (Year and PP)
 hoursin_df$Year <- NULL
 hoursin_df$PP <- NULL
+head(hoursin_df)
 
 # Convert the remaining 26 x 14 (r x c) grid to a matrix object
 hoursmatrix <- matrix(as.numeric(unlist(hoursin_df)), nrow = nrow(hoursin_df))
+hoursmatrix
 
 # Transpose the matrix from 26 x 14 to 14 x 26. 
 hoursmatrix <-t(hoursmatrix)
+hoursmatrix
 
 # Make the matrix into a vector
 hoursvector <- as.vector(hoursmatrix)
 
-# Drop all elements with a 0 value
+# Drop all elements with a na value
 hoursvector <-hoursvector[!is.na(hoursvector)]
 
 # Add however many 0s to the end of the vector to attain a length of 182
@@ -52,4 +57,4 @@ hoursout <- c(hoursvector, rep(0,182-length(hoursvector)))
 dim(hoursout) <- c(26,7)
 
 # Output as a csv file
-write.table(hoursout, file= "Hoursout.csv", row.names = FALSE, col.names = FALSE, sep = ",")
+write.table(hoursout, file= "./Results/Hoursout.csv", row.names = FALSE, col.names = FALSE, sep = ",")
