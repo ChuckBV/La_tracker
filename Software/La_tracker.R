@@ -12,7 +12,7 @@
 # automate the reshaping of these data, thereby increasing
 # efficiency and reducing transcription errors.
 
-APROACH
+# APPROACH
 # Data are collected in an Excel spreadsheet that is an
 # succinct version of the data collected for WebTA (i.e.,
 # 26 rows representing Pay Periods with 14 columns representing
@@ -30,8 +30,7 @@ head(hoursin_df)
 
 
 # Drop the first two columns (Year and PP)
-hoursin_df$Year <- NULL
-hoursin_df$PP <- NULL
+hoursin_df <- hoursin_df[ , c(3:16)]
 head(hoursin_df)
 
 # Convert the remaining 26 x 14 (r x c) grid to a matrix object
