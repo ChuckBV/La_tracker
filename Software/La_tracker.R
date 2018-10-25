@@ -31,8 +31,8 @@ head(hoursin_df)
 
 
 # Drop the first two columns (Year and PP)
-hoursin_df <- hoursin_df[ , c(3:16)]
-head(hoursin_df)
+hoursin_df <- hoursin_df[ , c(4:17)]
+head(hoursin_df) #Should be just d1-d14
 
 # Convert the remaining 26 x 14 (r x c) grid to a matrix object
 hoursmatrix <- matrix(as.numeric(unlist(hoursin_df)), nrow = nrow(hoursin_df))
@@ -47,6 +47,8 @@ hoursvector <- as.vector(hoursmatrix)
 
 # Drop all elements with a na value
 hoursvector <-hoursvector[!is.na(hoursvector)]
+# Drop any 0s
+hoursvector <- hoursvector[hoursvector == 0]
 
 # Add however many 0s to the end of the vector to attain a length of 182
 hoursout <- c(hoursvector, rep(0,182-length(hoursvector)))
