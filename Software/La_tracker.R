@@ -22,6 +22,7 @@
 # is a more computer-friendly grid that is saved as a 
 # CSV file and read in by R to reshape the data
 
+
 #RESHAPING THE DATA
 
 # Read in the grid as a data frame
