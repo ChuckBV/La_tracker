@@ -1,9 +1,30 @@
 # La_tracker and other personnel-related software
 
 Flips a matrix of hours worked from the form in which the data are encountered to 
-the form that we are required to return. The work is done by "./Software/La_tracker.R"
+the form that we are required to return. Examples of input and output are shown
+in:
 
-## La-tracker.R
+![Input format](/Docs/Payperiods-test-seq.JPG)
+Format: ![Inupt form](La_tracker/Docs/Payperiods-test-seq.JPG)
+
+![Output format](/Docs/Hourshout.JPG)
+Format: ![Inupt form](La_tracker/Docs/Hourshout.JPG)
+
+
+## Programs (in ./Software/)
+
+### La_tracker_demo_proto.R (in ./Software/)
+
+Instead of hours, uses numerals 1 to 130 to demonstrate how the cells from 
+the input matrix are re-arranged. Individual steps are separated and 
+annotated.
+
+### La_tracker_demo.R (in ./Software/)
+
+
+
+
+
 
 Reads in data from a 26 rows (pay periods) of 14 columns (days in pay periods)
 
