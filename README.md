@@ -29,7 +29,7 @@ in brackets to create a quasi-executable script.
 Like L/A tracker_demo.R, but works with actual hours.
 
 
-## Instuctions
+## Instructions
 
 ### 1. Record hours by Pay Period and day in an Excel form
 
@@ -59,17 +59,3 @@ script and save "Hoursout.csv"
 Change name, add information for individual, save elsewhre, Save Sheet1
 as a PDF (Sheet1 dispays numerals referenced from Sheet2), save
 Sheet1 as a PDF, and provide to PSA for upload into ARIS
-
-
-
-## In Data and Results
-
-"./Data/Hoursin.csv" is obtained from the second tab in the "La_hr_namelf_y17_pp10.xlsx"
-spreadsheet using "save as csv"
-
-"./Results/Hoursout.csv" is opened in Excel for copy-and-paste into "La Appt Tracker.xlsx"
-
-## Ratings.R
-
-Explores scenarios and outcomes for ratings of individual elements in the
-annual performance review
