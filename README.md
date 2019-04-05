@@ -1,9 +1,14 @@
-# La_tracker
+# La_tracker and other personnel-related software
+
 Flips a matrix of hours worked from the form in which the data are encountered to 
 the form that we are required to return. The work is done by "./Software/La_tracker.R"
 
-## In Docs
+## La-tracker.R
 
+Reads in data from a 26 rows (pay periods) of 14 columns (days in pay periods)
+
+
+### In ./Docs
 "La_hr_namelf_y17_pp10.xlsx" is a self-created spreadsheet designed to: 1) be
 organized somewhat similarly to the institutional "WebTA"; 2) facilitate 
 real-time tracking of hours worked to prevent exceeding 1039; and 3) provide
@@ -18,3 +23,8 @@ in order to renew a letter of authority (L/A) appointment.
 spreadsheet using "save as csv"
 
 "./Results/Hoursout.csv" is opened in Excel for copy-and-paste into "La Appt Tracker.xlsx"
+
+## Ratings.R
+
+Explores scenarios and outcomes for ratings of individual elements in the
+annual performance review

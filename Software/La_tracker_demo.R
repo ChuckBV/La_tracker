@@ -1,5 +1,5 @@
 #=============================================================================
-# La_tracker.R
+# La_tracker_demo.R
 #
 #=============================================================================
 
@@ -8,7 +8,7 @@ library(dplyr)
 #-- 1. Demonstrate in principle ----------------------------------------------
 
 # Read in the grid as a data frame
-hoursin_df <- as.data.frame(read.csv("./Data/Hoursin.csv", header=TRUE))
+hoursin_df <- as.data.frame(read.csv("./Data/Payperiods-test-seq.csv", header=TRUE))
 
 # Drop columns other then day 1 to day 14 of the payperiod (Year and PP)
 hoursin_df <- select(hoursin_df, d1:d14)
@@ -28,4 +28,3 @@ hoursin_df <- select(hoursin_df, d1:d14)
 
 # Output as a csv file
 write.table(hoursvector, file= "./Results/Hoursout.csv", row.names = FALSE, col.names = FALSE, sep = ",")
-
