@@ -13,13 +13,13 @@ Format: ![Output form](La_tracker/Docs/Hourshout.JPG)
 
 ## Programs (in ./Software/)
 
-### La_tracker_demo_proto.R (in ./Software/)
+### La_tracker_demo_proto.R
 
 Instead of hours, uses numerals 1 to 130 to demonstrate how the cells from 
 the input matrix are re-arranged. Individual steps are separated and 
 annotated.
 
-### La_tracker_demo.R (in ./Software/)
+### La_tracker_demo.R
 
 Like previous script, but annotation removed and several key steps placed
 in brackets to create a quasi-executable script.
