@@ -1,6 +1,9 @@
 #=============================================================================
 # La_tracker_demo.R
 #
+# Only difference between this and the working script (La_tracker.R) is that
+# this one 
+#
 #=============================================================================
 
 library(dplyr)
