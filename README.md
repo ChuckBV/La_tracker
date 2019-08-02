@@ -5,7 +5,7 @@ the form that we are required to return. Examples of input and output are shown
 in:
 
 ![Input format](/Docs/Payperiods-test-seq.JPG)
-Format: ![Inupt form](La_tracker/Docs/Payperiods-test-seq.JPG)
+URL: https://www.github.com/chuckbv/La_tracker/Docs/Payperiods-test-seq.JPG
 
 ![Output format](/Docs/Hourshout.JPG)
 Format: ![Output form](La_tracker/Docs/Hourshout.JPG)
