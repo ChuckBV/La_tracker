@@ -11,7 +11,7 @@ library(dplyr)
 hoursin_df <- as.data.frame(read.csv("./Data/Hoursin.csv", header=TRUE))
 
 # Drop columns other then day 1 to day 14 of the payperiod (Year and PP)
-hoursin_df <- select(hoursin_df, d1:d14)
+hoursin_df <- hoursin_df[ ,3:16]
 
 # Make the 26-row x 14-column df with values of interest arranged from left 
 # to right and top to bottm into a 26-row x 7 column matrix with the non-0,
