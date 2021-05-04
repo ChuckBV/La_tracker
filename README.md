@@ -26,12 +26,20 @@ in brackets to create a quasi-executable script.
 
 Like L/A tracker_demo.R, but works with actual hours.
 
+### La_tracker2.R
+
+A change was proposed in May 2021 in which the tracker gave and summarized 
+hours as columns of date, hours, and days worked; attached to a 26-PP 
+tracker. Implementation was postponed due to problems with the design of
+this Excel document.
+
+
 
 ## Instructions
 
 ### 1. Record hours by Pay Period and day in an Excel form
 
-At the start of the L/A appointment, modifind "La_hr_namelf_y17_pp10.xlsx" 
+At the start of the L/A appointment, modified "La_hr_namelf_y17_pp10.xlsx" 
 with information appropriate for the individual. This is used to keep track
 of the L/A appointmenmt, and has the advantage of being more reasily compared
 with webTA
