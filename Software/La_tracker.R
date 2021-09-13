@@ -11,7 +11,7 @@ hoursin_df <- as.data.frame(read.csv("./Data/Hoursin.csv", header=TRUE))
 # Drop columns other then day 1 to day 14 of the payperiod (Year and PP)
 hoursin_df <- hoursin_df[ ,3:16]
 
-# Make the 26-row x 14-column df with values of interest arranged from left 
+# Make the 27-row x 14-column df with values of interest arranged from left 
 # to right and top to bottm into a 26-row x 7 column matrix with the non-0,
 # non-NA values from the dataframe arranged top to bottom and left to right.
 # Convert the remaining 26 x 14 (r x c) grid to a matrix object
