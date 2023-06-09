@@ -3,10 +3,17 @@
 #
 #=============================================================================
 
+library(readxl)
+
 #-- 1. Demonstrate in principle ----------------------------------------------
 
 # Read in the grid as a data frame
-hoursin_df <- as.data.frame(read.csv("./Data/Hoursin.csv", header=TRUE))
+#hoursin_df <- as.data.frame(read.csv("./Data/Hoursin.csv", header=TRUE))
+hoursin_df <- read_excel("C:/Users/Charles.Burks/Desktop/La_hr_apennebaker_y22y23.xlsx",
+                         sheet = 2,
+                         range = "C1:P27",
+                         col_names = T
+                         )
 
 # Drop columns other then day 1 to day 14 of the payperiod (Year and PP)
 hoursin_df <- hoursin_df[ ,3:16]
@@ -25,5 +32,5 @@ hoursin_df <- hoursin_df[ ,3:16]
 }
 
 # Output as a csv file
-write.table(hoursvector, file= "./Results/Hoursout.csv", row.names = FALSE, col.names = FALSE, sep = ",")
+write.table(hoursvector, file= "Hoursout.csv", row.names = FALSE, col.names = FALSE, sep = ",")
 
