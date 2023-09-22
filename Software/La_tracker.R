@@ -9,14 +9,13 @@ library(readxl)
 
 # Read in the grid as a data frame
 #hoursin_df <- as.data.frame(read.csv("./Data/Hoursin.csv", header=TRUE))
-hoursin_df <- read_excel("C:/Users/Charles.Burks/Desktop/La_hr_apennebaker_y22y23.xlsx",
-                         sheet = 2,
+hoursin_df <- read_excel("./Data/Hoursin.xlsx",
                          range = "C1:P27",
                          col_names = T
                          )
 
 # Drop columns other then day 1 to day 14 of the payperiod (Year and PP)
-hoursin_df <- hoursin_df[ ,3:16]
+#hoursin_df <- hoursin_df[ ,3:16]
 
 # Make the 27-row x 14-column df with values of interest arranged from left 
 # to right and top to bottm into a 26-row x 7 column matrix with the non-0,
